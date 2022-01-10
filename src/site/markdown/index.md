@@ -10,3 +10,8 @@ Common extensions of JUnit 4 for supporting AEM Mocks JUnit 4 integration.
 * [Usage](usage.html)
 * [API documentation](apidocs/)
 * [Changelog](changes-report.html)
+
+
+### GitHub Repository
+
+Sources: https://github.com/wcm-io/io.wcm.testing.junit-commons
