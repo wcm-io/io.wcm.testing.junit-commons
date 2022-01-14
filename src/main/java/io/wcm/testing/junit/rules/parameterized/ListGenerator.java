@@ -37,7 +37,7 @@ import org.osgi.annotation.versioning.ProviderType;
 @ProviderType
 public final class ListGenerator<T> implements Generator<T> {
 
-  private final ValueContainer<T> currentValue = new ValueContainer<T>();
+  private final ValueContainer<T> currentValue = new ValueContainer<>();
   private final AccessibleErrorCollector errorCollector = new AccessibleErrorCollector();
   private final List<T> values;
 
@@ -70,7 +70,7 @@ public final class ListGenerator<T> implements Generator<T> {
   @Override
   public Statement apply(final Statement test, final Description description) {
     return new RepeatedStatement<T>(test,
-        new SyncingIterable<T>(this.values, this.currentValue),
+        new SyncingIterable<>(this.values, this.currentValue),
         this.errorCollector,
         this.setUpCallback, this.tearDownCallback);
   }

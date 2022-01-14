@@ -46,7 +46,7 @@ public final class GeneratorFactory {
    */
   @SafeVarargs
   public static <T> Generator<T> list(final T... values) {
-    return new ListGenerator<T>(asList(values));
+    return new ListGenerator<>(asList(values));
   }
 
 }
