@@ -7,7 +7,7 @@
 Common extensions of JUnit 4.
 
 Documentation: https://wcm.io/testing/junit-commons/<br/>
-Issues: https://wcm-io.atlassian.net/browse/WTES<br/>
+Issues: https://github.com/wcm-io/io.wcm.testing.junit-commons/issues<br/>
 Wiki: https://wcm-io.atlassian.net/wiki/<br/>
 Continuous Integration: https://github.com/wcm-io/io.wcm.testing.junit-commons/actions<br/>
 Commercial support: https://wcm.io/commercial-support.html
