@@ -9,7 +9,7 @@ Common extensions of JUnit 4 for supporting AEM Mocks JUnit 4 integration.
 
 * [Usage](usage.html)
 * [API documentation](apidocs/)
-* [Changelog](changes-report.html)
+* [Changelog](changes.html)
 
 
 ### GitHub Repository
