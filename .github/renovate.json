@@ -3,9 +3,5 @@
   "extends": [
     "github>wcm-io/renovate-config:maven",
     "github>wcm-io/renovate-config:automerge-parent"
-  ],
-  "ignoreDeps": [
-    "junit:*",
-    "org.junit.jupiter:*"
   ]
 }
