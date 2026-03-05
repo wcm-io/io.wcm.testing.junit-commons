@@ -29,6 +29,7 @@ import org.junit.Test;
 public class CallbackExampleTest {
 
   private final Callback<String> setUpCallback = new Callback<String>() {
+
     @Override
     public void execute(final String currentValue) {
       // some actions before starting a test iteration
@@ -37,6 +38,7 @@ public class CallbackExampleTest {
   };
 
   private final Callback<String> tearDownCallback = new Callback<String>() {
+
     @Override
     public void execute(final String currentValue) {
       // some actions after starting a test iteration
@@ -47,8 +49,7 @@ public class CallbackExampleTest {
   public Generator<String> params = new ListGenerator<String>(
       Arrays.asList("alpha", "beta", "gamma"),
       this.setUpCallback,
-      this.tearDownCallback
-      );
+      this.tearDownCallback);
 
   @Test
   public void testSomething() throws Exception {

@@ -36,10 +36,14 @@ import org.junit.Test;
 
 public class ListRuleWithCallbacksTest {
 
-  @SuppressWarnings({ "unchecked", "null" })
+  @SuppressWarnings({
+      "unchecked", "null"
+  })
   private Callback<Integer> setUpCallback = mock(Callback.class);
 
-  @SuppressWarnings({ "unchecked", "null" })
+  @SuppressWarnings({
+      "unchecked", "null"
+  })
   private Callback<Integer> tearDownCallback = mock(Callback.class);
 
   @Rule

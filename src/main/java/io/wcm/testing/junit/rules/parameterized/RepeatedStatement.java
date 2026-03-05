@@ -75,8 +75,8 @@ class RepeatedStatement<T> extends Statement {
 
   private static String buildAssertionMessage(String msg, Throwable ex) {
     StringBuilder sb = new StringBuilder()
-        .append(msg)
-        .append(": ");
+      .append(msg)
+      .append(": ");
     if (ex.getMessage() != null) {
       sb.append(ex.getMessage());
     }
