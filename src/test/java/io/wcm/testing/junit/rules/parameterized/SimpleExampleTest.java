@@ -30,7 +30,7 @@ public class SimpleExampleTest {
   public Generator<String> params = GeneratorFactory.list("alpha", "beta", "gamma");
 
   @Test
-  public void testSomething() throws Exception {
+  public void testSomething() {
     assertTrue(this.params.value().length() >= 4);
   }
 

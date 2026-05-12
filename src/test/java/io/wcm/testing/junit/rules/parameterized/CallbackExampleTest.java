@@ -52,7 +52,7 @@ public class CallbackExampleTest {
       this.tearDownCallback);
 
   @Test
-  public void testSomething() throws Exception {
+  public void testSomething() {
     assertTrue(this.params.value().length() >= 4);
   }
 

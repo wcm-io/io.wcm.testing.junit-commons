@@ -46,9 +46,8 @@ class RepeatedStatement<T> extends Statement {
   }
 
   @Override
-  // CHECKSTYLE:OFF
+  @SuppressWarnings("PMD.AvoidCatchingGenericException")
   public void evaluate() throws Throwable {
-    // CHECKSTYLE:ON
     for (T v : this.values) {
       try {
         if (this.setUpCallback != null) {
@@ -56,7 +55,7 @@ class RepeatedStatement<T> extends Statement {
         }
         this.test.evaluate();
       }
-      /*CHECKSTYLE:OFF*/ catch (Exception ex) { /*CHECKSTYLE:ON*/
+      catch (Exception ex) {
         this.errorCollector.addError(new AssertionError(buildAssertionMessage("For value " + v, ex), ex));
       }
       finally {
@@ -65,7 +64,7 @@ class RepeatedStatement<T> extends Statement {
             this.tearDownCallback.execute(v);
           }
         }
-        /*CHECKSTYLE:OFF*/ catch (Exception ex) { /*CHECKSTYLE:ON*/
+        catch (Exception ex) {
           this.errorCollector.addError(new AssertionError(buildAssertionMessage("For value " + v + " (teardown)", ex), ex));
         }
       }
